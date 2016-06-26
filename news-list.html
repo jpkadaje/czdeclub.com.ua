@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CZDEClub.com.ua - Главная</title>
+    <title>CZDEClub.com.ua - Новости разводящая</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -29,7 +29,7 @@
                             <ul>
                                 <li><a href="#">Лечебные туры</a>
                                     <ul>
-                                        <li><a href="#">Чехия</a></li>
+                                        <li><a href="tour.html">Чехия</a></li>
                                         <li><a href="#">Венгрия</a></li>
                                         <li><a href="#">Германия</a></li>
                                         <li><a href="#">Австрия</a></li>
@@ -41,17 +41,6 @@
                                     <a href="#">Туризм</a>
                                 </li>
                                 <li>
-                                    <a href="#">Визовая поддержка</a>
-                                    <ul>
-                                        <li><a href="#">Чехия</a></li>
-                                        <li><a href="#">Венгрия</a></li>
-                                        <li><a href="#">Германия</a></li>
-                                        <li><a href="#">Австрия</a></li>
-                                        <li><a href="#">Польша</a></li>
-                                        <li><a href="#">Италия</a></li>
-                                    </ul>
-                                </li>
-                                <li>
                                     <a href="#">Высшее образование в Европе</a>
                                 </li>
                                 <li>
@@ -59,10 +48,17 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-menu__item"><a href="#" title="Услуги">Услуги</a></li>
+                        <li class="main-menu__item"><a href="#" title="Услуги">Услуги</a>
+                            <ul>
+                                <li><a href="#">Визовая поддержка</a></li>
+                                <li><a href="#">Автобусные билеты</a></li>
+                                <li><a href="#">Загранпаспорта</a></li>
+                                <li><a href="#">Страхование</a></li>
+                            </ul>
+                        </li>
                         <li class="main-menu__item"><a href="#" title="Блог">Блог</a></li>
                         <li class="main-menu__item"><a href="#" title="Отзывы">Отзывы</a></li>
-                        <li class="main-menu__item"><a href="#" title="Контакты">Контакты</a></li>
+                        <li class="main-menu__item"><a href="contacts.html" title="Контакты">Контакты</a></li>
                     </ul>
                     <ul class="social-links">
                         <li class="social-links__item">
@@ -233,7 +229,43 @@
         </div>
         <!-- rel main -->
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <ul>
+                    <li><b>Обзор</b></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+                <ul>
+                    <li><b>О нас</b></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul>
+                    <li><b>Контакты</b></li>
+                    <li>380-66-284-28-13</li>
+                    <li>380-67-777-55-77</li>
+                    <li><a href="mailto:info@czdeclub.com.ua">info@czdeclub.com.ua</a></li>
+                    <li>Украна, г. Харьков,
+                        <br />пр. Ленина 4, офис 28</li>
+                </ul>
+                <ul class="footer__subscribe">
+                    <li><b>Подписаться</b></li>
+                    <li class="subscribe__social-links">
+                        <a href="#" title="Youtube" target="_blank"><img src="images/social-icons__youtube.png" width="30" alt="Youtube"></a>
+                        <a href="#" title="Facebook" target="_blank"><img src="images/social-icons__facebook.png" width="30" alt="Facebook"></a>
+                        <a href="#" title="Instagram" target="_blank"><img src="images/social-icons__instagram.png" width="30" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <form action="index.html">
+                            <input type="text" class="subscribe__email" placeholder="Введите ваш email">
+                            <input type="submit" value="подписаться" class="subscribe__email btn_middle_border-white">
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
     <!-- .wrap -->
@@ -241,52 +273,68 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.green.min.css">
-    <script>
-        $(document).ready(function() {
-            // Search BEGIN
-            $('.search-link').click(function() {
-                $('.search-input').toggleClass('search-input_visible');
-            });
-            $('header').hover(function() {
-                $('.search-input').removeClass('search-input_visible');
-            });
-            // Search END
 
-            // Carousel BEGIN
-            $(".owl-carousel.hot-tours").owlCarousel({
-                items: 4,
-                margin: 10,
-                loop: true,
-                dots: true,
-                autoplay: true
-            });
-            var owl = $('.owl-carousel.hot-tours');
-            owl.owlCarousel();
-            // Go to the next item
-            $('.right-arrow').click(function() {
-                    owl.trigger('next.owl.carousel');
-                })
-                // Go to the previous item
-            $('.left-arrow').click(function() {
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <script>
+            $(document).ready(function() {
+                // Search BEGIN
+                $('.search-link').click(function() {
+                    $('.search-input').toggleClass('search-input_visible');
+                });
+                $('header').hover(function() {
+                    $('.search-input').removeClass('search-input_visible');
+                });
+                // Search END
+
+                // Carousel BEGIN
+                $(".owl-carousel.hot-tours").owlCarousel({
+                    items: 4,
+                    margin: 10,
+                    loop: true,
+                    dots: true,
+                    autoplay: true
+                });
+                var owl = $('.owl-carousel.hot-tours');
+                owl.owlCarousel();
+                // Go to the next item
+                $('.right-arrow').click(function() {
+                        owl.trigger('next.owl.carousel');
+                    })
+                    // Go to the previous item
+                $('.left-arrow').click(function() {
                     // With optional speed parameter
                     // Parameters has to be in square bracket '[]'
                     owl.trigger('prev.owl.carousel', [300]);
                 })
                 // Carousel END
+
                 // news-list masonry
-            $('.grid').masonry({
-              columnWidth: 300,
-              itemSelector: '.grid-item',
-              gutter: 30
+                $('.grid').masonry({
+                    columnWidth: 300,
+                    itemSelector: '.grid-item',
+                    gutter: 30
+                });
+
+                // popup gallery
+                $('.tours-detail-gallery').magnificPopup({
+                    type: 'image',
+                    gallery:{
+                        enabled:true
+                    },
+                    removalDelay: 300,       // Delay in milliseconds before popup is removed
+                    mainClass: 'mfp-fade'   // Class that is added to popup wrapper and background
+                });
+
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
