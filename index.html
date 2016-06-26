@@ -251,9 +251,11 @@
                     <p>Наше агентство создано и работает для того, чтобы помогать Вам в вопросах подбора любого отдыха, а именно -демократичного отдыха семьям с детьми, или путешествия для молодоженов, ищущих уединение, отдыха для солидных людей, привыкших
                         отдыхать в фешенебельных отелях…
                     </p>
-                    <img style="margin: 20px 0;" src="images/some-image.png" alt="">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/y1UarPueBBM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <!-- <img style="margin: 20px 0;" src="images/some-image.png" alt=""> -->
                 </div>
             </section>
+
             <section class="our-advantages_home">
                 <div class="container">
                     <h2><span>НАШИ ПРЕИМУЩЕСТВА</span></h2>
@@ -267,14 +269,15 @@
                         <li><span>автобусные путешествия и экскурсии по Европе</span></li>
                         <li><span>лечебные программы (клиники, больницы, санатории в Украине и по всему миру)</span></li>
                     </ul>
-                    <p>При чем, чтобы Вы не заказали, - роскошную виллу <a href="#">на берегу Средиземного моря</a> или уютный семейный пансионат на побережье Крыма, коллектив агентства всегда рад работать с Вами и поможет быстро забронировать и приобрести путёвки, горящие
-                        туры, авиабилеты, гостиницы, круизы, экскурсии, автомобили напрокат, а также комплексно организовать Ваш отдых или деловую поездку.
+                    <p>При чем, чтобы Вы не заказали, - роскошную виллу <a href="#">на берегу Средиземного моря</a> или уютный семейный пансионат на побережье Крыма, коллектив агентства всегда рад работать с Вами и поможет быстро забронировать и приобрести
+                        путёвки, горящие туры, авиабилеты, гостиницы, круизы, экскурсии, автомобили напрокат, а также комплексно организовать Ваш отдых или деловую поездку.
                     </p>
                     <p>Путешествие, которое продолжается тысячи километров, всегда начинается с первого шага. Этот шаг для Вас - туристическое агентство "CZDEClub".</p>
                     <p>Добро пожаловать в наши офисы!</p>
                     <p>Ваш "CZDEClub"!</p>
                 </div>
             </section>
+
         </div>
         <!-- rel main -->
         <footer class="footer">
@@ -297,7 +300,8 @@
                     <li>380-66-284-28-13</li>
                     <li>380-67-777-55-77</li>
                     <li><a href="mailto:info@czdeclub.com.ua">info@czdeclub.com.ua</a></li>
-                    <li>Украна, г. Харьков, <br />пр. Ленина 4, офис 28</li>
+                    <li>Украна, г. Харьков,
+                        <br />пр. Ленина 4, офис 28</li>
                 </ul>
                 <ul class="footer__subscribe">
                     <li><b>Подписаться</b></li>
@@ -319,45 +323,53 @@
     <!-- .wrap -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.green.min.css">
-    <script>
-        $(document).ready(function() {
-            // Search BEGIN
-            $('.search-link').click(function() {
-                $('.search-input').toggleClass('search-input_visible');
-            });
-            $('header').hover(function() {
-                $('.search-input').removeClass('search-input_visible');
-            });
-            // Search END
 
-            // Carousel BEGIN
-            $(".owl-carousel.hot-tours").owlCarousel({
-                items: 4,
-                margin: 10,
-                loop: true,
-                dots: true,
-                autoplay: true
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.theme.green.min.css">
+        <script>
+            $(document).ready(function() {
+                // Search BEGIN
+                $('.search-link').click(function() {
+                    $('.search-input').toggleClass('search-input_visible');
+                });
+                $('header').hover(function() {
+                    $('.search-input').removeClass('search-input_visible');
+                });
+                // Search END
+
+                // Carousel BEGIN
+                $(".owl-carousel.hot-tours").owlCarousel({
+                    items: 4,
+                    margin: 10,
+                    loop: true,
+                    dots: true,
+                    autoplay: true
+                });
+                var owl = $('.owl-carousel.hot-tours');
+                owl.owlCarousel();
+                // Go to the next item
+                $('.right-arrow').click(function() {
+                        owl.trigger('next.owl.carousel');
+                    })
+                    // Go to the previous item
+                $('.left-arrow').click(function() {
+                        // With optional speed parameter
+                        // Parameters has to be in square bracket '[]'
+                        owl.trigger('prev.owl.carousel', [300]);
+                    })
+                    // Carousel END
+                    // news-list masonry
+                $('.grid').masonry({
+                  columnWidth: 300,
+                  itemSelector: '.grid-item',
+                  gutter: 30
+                });
             });
-            var owl = $('.owl-carousel.hot-tours');
-            owl.owlCarousel();
-            // Go to the next item
-            $('.right-arrow').click(function() {
-                    owl.trigger('next.owl.carousel');
-                })
-                // Go to the previous item
-            $('.left-arrow').click(function() {
-                    // With optional speed parameter
-                    // Parameters has to be in square bracket '[]'
-                    owl.trigger('prev.owl.carousel', [300]);
-                })
-                // Carousel END
-        });
-    </script>
+        </script>
 </body>
 
 </html>
