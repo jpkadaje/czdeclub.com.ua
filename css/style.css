@@ -481,6 +481,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
 /* Header BEGIN */
 header {
   min-height: 160px;
@@ -723,6 +727,10 @@ ul ul ul {
   line-height: 150px;
   text-align: center;
   background-size: cover;
+  float: left;
+}
+.hot-tours .title-page {
+  float: none;
 }
 .title-page_news-list {
   background: url(../images/title-page_news-list.jpg) center center no-repeat;
@@ -740,6 +748,10 @@ ul ul ul {
   background: url(../images/title-page_feedback.jpg) center bottom no-repeat;
   background-size: cover;
 }
+.title-page_blog-detail {
+  background: url(../images/title-page_blog.jpg) center top no-repeat;
+  background-size: cover;
+}
 h2 {
   font-size: 1.8em;
   font-weight: 300;
@@ -751,6 +763,7 @@ h2 span {
     line-height: normal;
     display: inline-block;
     vertical-align: middle;
+    padding: 0 50px;
 }
 /* title-page END */
 
@@ -1166,20 +1179,207 @@ ul.tour-detail__gallery {
 
 
 
+/* static page BEGIN */
+.static-page {
+  width: 100%;
+  float: left;
+  padding: 0px 0 60px;
+}
+.static__text {
+	height: auto;
+	width: 960px;
+	margin: 0 auto;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: normal;
+	color: #000000;
+	text-align: justify;
+}
+
+.static__table {
+  border-spacing: 0;
+  border: 1px solid #245d89;
+  border-radius: 5px;
+	text-align: center;
+  margin: 30px 0;
+}
+.static__table td,
+.static__table th {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: normal;
+	min-height: 60px;
+	padding: 10px 30px;
+	vertical-align: middle;
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+.static__table td:last-child,
+.static__table th:last-child {}
+.static__table td {
+	border-color: #245d89;
+}
+.static__table th {
+  border-top: none;
+	border-color: #245d89;
+	background: #245d89;
+	color: #ffffff;
+}
+.static__table td:first-child,
+.static__table th:first-child {
+  border-left: none;
+}
+.static__table th:first-child {border-top-left-radius: 4px;}
+.static__table th:last-child {border-top-right-radius: 4px;}
+.static__table td {color: #000000;}
+.static__table td a {
+	text-decoration: none;
+	color: #245d89;
+}
+.static__table td a:hover {
+  text-decoration: underline;
+}
+/* staic page END */
 
 
 
+/* blog BEGIN */
+.blog-list {
+  width: 100%;
+  float: left;
+  padding: 40px 0 60px;
+}
+.blog-list .container {
+  width: 700px;
+}
+.blog__post {
+	width: 100%;
+	position: relative;
+  border-bottom: 1px solid #dee7ed;
+  float: left;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+.blog__post-left {
+	float: left;
+	width: 125px;
+	margin-right: 20px;
+  position: relative;
+}
+.blog__post-left img {
+  width: 100%;
+}
+.blog__autor {
+	font-size: 0.9em;
+	font-weight: 600;
+	line-height: normal;
+	color: #000000;
+	text-align: center;
+}
+.blog__post-right {
+	float: left;
+	width: 555px;
+  position: relative;
+  line-height: 0;
+}
+.blog__post-right img {
+  width: 100%;
+	margin: 10px 0 0;
+}
+.blog__post-title {
+	font-size: 1.4em;
+	font-weight: 400;
+	line-height: normal;
+}
+.blog__post-right p {
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height: normal;
+	color: #000000;
+	width: 100%;
+	text-align: justify;
+}
+.blog__footer {
+	float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+.blog__footer a {
+	float: right;
+  line-height: normal;
+}
+.blog__post-date {
+	font-size: 0.8em;
+	font-weight: 300;
+	line-height: 46px;
+	color: #000000;
+	float: left;
+}
+
+/* blog END */
 
 
+/* news-detail, blog-detail pages BEGIN */
+.news-detail {
+  width: 100%;
+  float: left;
+  padding: 0 0 60px;
+}
+.news-detail center {
+  margin-top: 20px;
+}
+.news-detail .container > img {
+  margin-bottom: 20px;
+}
+.news-detail__text {
+  width: 800px;
+  margin: 0 auto;
+	text-align: justify;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: normal;
+	color: #101010;
+}
+.news-detail__text ul {
+  padding-left: 30px;
+  list-style: disc;
+}
+.news-detail__text  b {
+	font-weight: 600;
+}
+.news-detail__date {
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height: normal;
+	color: #101010;
+  text-align: left;
+}
+.blog-detail {
+  padding-top: 40px;
+}
+.blog-detail .news-detail__date {
+  float: right;
+  line-height: 30px;
+  font-size: 0.9em;
+}
+.news-detail__footer {
+  margin: 30px auto 0;
+  width: 800px;
+  min-height: 30px;
+}
+.blog-detail__autor {
+  float:left;
+  font-size: .9em;
+  line-height: 30px;
+}
+.blog-detail__autor img {
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
 
-
-
-
-
-
-
-
-
+}
+/* news-detail page END */
 
 
 
@@ -1307,6 +1507,9 @@ ul.tour-detail__gallery {
   border-color: #245b89;
   border-width: 1px;
   margin-bottom: 1px;
+}
+.input-field input:invalid {
+  border-color: red;
 }
 .input-field .contacts__text {
   width: 100%;
