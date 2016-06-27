@@ -736,6 +736,10 @@ ul ul ul {
   background: url(../images/title-page_contacts.jpg) center center no-repeat;
   background-size: cover;
 }
+.title-page_feedback {
+  background: url(../images/title-page_feedback.jpg) center bottom no-repeat;
+  background-size: cover;
+}
 h2 {
   font-size: 1.8em;
   font-weight: 300;
@@ -1107,7 +1111,58 @@ ul.tour-detail__gallery {
 /* contacts page END */
 
 
+/* reviews page BEGIN */
+.reviews {
+  width: 100%;
+  float: left;
+  padding: 40px 0 60px;
+}
+.reviews .container {
+  width: 665px;
+}
+.reviews center a {
+  margin-top: 30px;
+}
+.review {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 10px;
+  float: left;
+  display: table;
+}
+.review__person {
+  width: 150px;
+  float: left;
+  text-align: center;
+}
 
+.review__person img {
+  border-radius: 50%;
+}
+.review__person-name {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.review__data {
+  font-weight: 300;
+  font-size: 0.6em;
+  opacity: .8;
+}
+
+.review__text {
+  width: 475px;
+  padding: 0 20px;
+  line-height: 100%;
+  float: left;
+  line-height: normal;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+.review:nth-child(2n) .review__person,
+.review:nth-child(2n) .review__text {
+  float: right;
+}
+/* reviews page END */
 
 
 
